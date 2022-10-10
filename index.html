@@ -9,6 +9,10 @@
     Bootstrap CSS Link 
     --------------------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- ---------------------------------------
+    Style CSS LInk
+    --------------------------------------- -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ---------------------------------------
@@ -16,7 +20,7 @@
     --------------------------------------- -->
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
+            <div class="container" id="home">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top">
               </a>
@@ -26,16 +30,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Shoes</a>
+                    <a class="nav-link active" aria-current="page" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">BackPack</a>
+                    <a class="nav-link active" aria-current="page" href="#backpack">BackPack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Subscribe</a>
+                    <a class="nav-link active" aria-current="page" href="#subscribe">Subscribe</a>
                   </li>
                 </ul>
               </div>
@@ -44,7 +48,7 @@
           <!-- ---------------------------------------
           Image Slider Part Start
           --------------------------------------- -->
-          <section class="container">
+          <section class="container panda-slider-background">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -105,19 +109,19 @@
      <section class="container my-5">
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
-                <div class="p-3 border bg-warning text-white d-flex align-items-center justify-content-between rounded">
+                <div class="p-3 border text-white d-flex align-items-center catagorious-images justify-content-between rounded">
                     <h1>Watch</h1>
                     <img src="images/categories/watch.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="p-3 border bg-success text-white d-flex align-items-center justify-content-between rounded">
+                <div class="p-3 border text-white d-flex align-items-center catagorious-image-tow justify-content-between rounded">
                     <h1> Cl Bag</h1>
                     <img src="images/categories/bag.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                <div class="p-3 border bg-primary text-white d-flex align-items-center justify-content-between rounded">
+                <div class="p-3 border text-white d-flex align-items-center catagorious-images-three justify-content-between rounded">
                     <h1>Shoes</h1>
                     <img src="images/categories/shoes.png" alt="">
                 </div>
@@ -127,7 +131,7 @@
      <!-- ---------------------------------------
      Start Shoes Part
      --------------------------------------- -->
-     <section class="container">
+     <section class="container" id="shoes">
         <h1>Shoes</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -174,8 +178,8 @@
      <!-- ---------------------------------------
      Bag Part Start
      --------------------------------------- -->
-     <section class="container my-5">
-        <h1>Shoes</h1>
+     <section class="container my-5" id="backpack">
+        <h1>BagPack</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card border-0 shadow-lg h-100">
@@ -221,7 +225,7 @@
      <!-- ---------------------------------------
      Submit Part
      --------------------------------------- -->
-     <section style="height: 300px;" class="container bg-info d-flex justify-content-center align-items-center rounded-4">
+     <section style="height: 300px;" class="container panda-slider-background d-flex justify-content-center align-items-center rounded-4" id="subscribe">
         <div>
             <h1>LET'S STAY IN TOUCH</h1>
             <p>Get updates on sales, specials and more</p>
@@ -231,8 +235,11 @@
         </div>
      </section>
     </main>
-    <footer>
-
+    <!-- ---------------------------------------
+    Start Footer Part
+    --------------------------------------- -->
+    <footer class="mt-5 text-center">
+      <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- ---------------------------------------
     Bootstrap JS Link 
